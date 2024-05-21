@@ -1,6 +1,8 @@
 
+'use client'
 import { Roboto } from 'next/font/google'
 import PageLayout from "@/components/PageLayout";
+import { useEffect, useState } from 'react';
 // import { useRef } from "react";
 
 const roboto = Roboto({
@@ -11,8 +13,10 @@ const roboto = Roboto({
 
 export default function Home() {
   // const ref = useRef(null)
+
   return (
     <main className={`flex min-h-screen flex-col w-full items-center justify-between${roboto.className}`}>
+
     <PageLayout />
     </main>
   );
